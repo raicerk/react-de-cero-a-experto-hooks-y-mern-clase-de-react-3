@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba del componente <heroPage/> Mostrar componente por defecto 1`] = `
+<div>
+  <div
+    class="row mt-5"
+  >
+    <div
+      class="col-4"
+    >
+      <img
+        alt="Batman"
+        class="img-thumbnail"
+        src="/assets/dc-batman.jpg"
+      />
+    </div>
+    <div
+      class="col-8"
+    >
+      <h3>
+        Batman
+      </h3>
+      <ul
+        class="list-group list-group-flush"
+      >
+        <li
+          class="list-group-item"
+        >
+          <b>
+            Alter ego:
+          </b>
+           
+          Bruce Wayne
+        </li>
+        <li
+          class="list-group-item"
+        >
+          <b>
+            Publisher:
+          </b>
+           
+          DC Comics
+        </li>
+        <li
+          class="list-group-item"
+        >
+          <b>
+            First appearance:
+          </b>
+           
+          Detective Comics #27
+        </li>
+      </ul>
+      <h5
+        class="mt-3"
+      >
+         Characters
+      </h5>
+      <p>
+        Bruce Wayne
+      </p>
+      <button
+        class="btn btn-outline-primary"
+      >
+        Regresar
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Prueba del componente <heroPage/> No debe cargar el componente por no recibir el useParam correcto 1`] = `<div />`;

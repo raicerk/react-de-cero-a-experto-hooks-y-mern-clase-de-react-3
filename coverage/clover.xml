@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1691103361210" clover="3.2.0">
-  <project timestamp="1691103361210" name="All files">
-    <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="1" coveredelements="1" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1"/>
-    <file name="types.js" path="/Users/juanvalentin.mora/Code/react-de-cero-a-experto-hooks-y-mern-clase-de-react-3/src/auth/types/types.js">
+<coverage generated="1691441208567" clover="3.2.0">
+  <project timestamp="1691441208567" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5" elements="18" coveredelements="18" complexity="0" loc="11" ncloc="11" packages="3" files="3" classes="3"/>
+    <package name="data">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <line num="1" count="1" type="stmt"/>
-    </file>
+      <file name="heroes.js" path="/Users/juanvalentin.mora/Code/react-de-cero-a-experto-hooks-y-mern-clase-de-react-3/src/heroes/data/heroes.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="helpers">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="getHeroById.js" path="/Users/juanvalentin.mora/Code/react-de-cero-a-experto-hooks-y-mern-clase-de-react-3/src/heroes/helpers/getHeroById.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="22" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="HeroPage.jsx" path="/Users/juanvalentin.mora/Code/react-de-cero-a-experto-hooks-y-mern-clase-de-react-3/src/heroes/pages/HeroPage.jsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
