@@ -1,5 +1,5 @@
-import { authReducer } from "../../../auth/context/AuthReducer";
-import { types } from "../../../auth/types/types";
+import { authReducer } from "../../../src/auth/context/AuthReducer";
+import { types } from "../../../src/auth/types/types";
 
 describe("Test de authReducer", () => {
   test("Validación de los datos en case de login", () => {
