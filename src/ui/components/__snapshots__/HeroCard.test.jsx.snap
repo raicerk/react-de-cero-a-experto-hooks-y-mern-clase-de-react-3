@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test de <HeroCard/> Carga componente con valores por defecto 1`] = `
+<div>
+  <div
+    class="col"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="row no-gutters"
+      >
+        <div
+          class="col-4"
+        >
+          <img
+            alt="superhero"
+            class="card-img"
+            src="/assets/id.jpg"
+          />
+        </div>
+        <div
+          class="col-8"
+        >
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              superhero
+            </h5>
+            <p
+              class="card-text"
+            >
+              alter_ego
+            </p>
+            <p>
+              characters
+            </p>
+            <p
+              class="card-text"
+            >
+              <small
+                class="text-muted"
+              >
+                first_appearance
+              </small>
+            </p>
+            <a
+              href="/hero/id"
+            >
+               Mas...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
