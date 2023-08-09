@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test de <NavBar/> Carga componente navbar con valores por defecto 1`] = `
+<div>
+  <nav
+    class="navbar navbar-expand-sm navbar-dark bg-dark p-2"
+  >
+    <a
+      class="navbar-brand"
+      href="/"
+    >
+      Asociaciones
+    </a>
+    <div
+      class="navbar-collapse"
+    >
+      <div
+        class="navbar-nav"
+      >
+        <a
+          class="nav-item nav-link "
+          href="/marvel"
+        >
+          Marvel
+        </a>
+        <a
+          class="nav-item nav-link "
+          href="/dc"
+        >
+          DC
+        </a>
+        <a
+          class="nav-item nav-link "
+          href="/search"
+        >
+          Search
+        </a>
+      </div>
+    </div>
+    <div
+      class="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end"
+    >
+      <ul
+        class="navbar-nav ml-auto"
+      >
+        <span
+          aria-label="user"
+          class="nav-item nav-link text-primary"
+        >
+          Juan
+        </span>
+        <button
+          class="nav-item nav-link btn"
+        >
+          Logout
+        </button>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Test de <NavBar/> Carga componente navbar con valores por defecto y con una ruta seleccionada 1`] = `
+<div>
+  <nav
+    class="navbar navbar-expand-sm navbar-dark bg-dark p-2"
+  >
+    <a
+      class="navbar-brand"
+      href="/"
+    >
+      Asociaciones
+    </a>
+    <div
+      class="navbar-collapse"
+    >
+      <div
+        class="navbar-nav"
+      >
+        <a
+          aria-current="page"
+          class="nav-item nav-link active"
+          href="/marvel"
+        >
+          Marvel
+        </a>
+        <a
+          class="nav-item nav-link "
+          href="/dc"
+        >
+          DC
+        </a>
+        <a
+          class="nav-item nav-link "
+          href="/search"
+        >
+          Search
+        </a>
+      </div>
+    </div>
+    <div
+      class="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end"
+    >
+      <ul
+        class="navbar-nav ml-auto"
+      >
+        <span
+          aria-label="user"
+          class="nav-item nav-link text-primary"
+        >
+          Juan
+        </span>
+        <button
+          class="nav-item nav-link btn"
+        >
+          Logout
+        </button>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;

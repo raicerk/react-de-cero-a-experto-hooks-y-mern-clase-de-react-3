@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { HeroCard } from "../../heroes/components/HeroCard";
+import { HeroCard } from "../../../src/heroes/components/HeroCard";
 import { MemoryRouter } from "react-router-dom";
 
 describe("Test de <HeroCard/>", () => {
