@@ -34,24 +34,21 @@ describe("Test de <NavBar/>", () => {
     expect(screen.getByLabelText("user").innerHTML).toBe("Juan");
   });
 
-  test("Carga componente navbar con valores por defecto y con una ruta seleccionada", () => {
-    const routes = [
-      { link: "/marvel", text: "Marvel" },
-      { link: "/dc", text: "DC" },
-      { link: "/search", text: "Search" },
-    ];
-    routes.forEach((route) => {
-      const { container } = render(
-        <AuthContext.Provider value={{}}>
-          <MemoryRouter initialEntries={[route.link]}>
-            <Navbar />
-          </MemoryRouter>
-        </AuthContext.Provider>
-      );
-      const element = container.getElementsByClassName("active");
-      expect(element[0].innerHTML).toBe(route.text);
-      expect(element.length).toBeGreaterThanOrEqual(1);
-    });
+  test.each([
+    { link: "/marvel", text: "Marvel" },
+    { link: "/dc", text: "DC" },
+    { link: "/search", text: "Search" },
+  ])("Debe mostrar el texto $text, con el link $link", (item) => {
+    const { container } = render(
+      <AuthContext.Provider value={{}}>
+        <MemoryRouter initialEntries={[item.link]}>
+          <Navbar />
+        </MemoryRouter>
+      </AuthContext.Provider>
+    );
+    const element = container.getElementsByClassName("active");
+    expect(element[0].innerHTML).toBe(item.text);
+    expect(element.length).toBeGreaterThanOrEqual(1);
   });
 
   test("Llamado al boton de logout", () => {
