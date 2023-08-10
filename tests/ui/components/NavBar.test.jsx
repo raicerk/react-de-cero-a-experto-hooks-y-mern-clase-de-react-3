@@ -39,13 +39,12 @@ describe("Test de <NavBar/>", () => {
     { link: "/dc", text: "DC" },
     { link: "/search", text: "Search" },
   ])("Debe mostrar el texto $text, con el link $link", (item) => {
-    const { container } = render(
+    const Wrapper = ({ children }) => (
       <AuthContext.Provider value={{}}>
-        <MemoryRouter initialEntries={[item.link]}>
-          <Navbar />
-        </MemoryRouter>
+        <MemoryRouter initialEntries={[item.link]}>{children}</MemoryRouter>
       </AuthContext.Provider>
     );
+    const { container } = render(<Navbar />, { wrapper: Wrapper });
     const element = container.getElementsByClassName("active");
     expect(element[0].innerHTML).toBe(item.text);
     expect(element.length).toBeGreaterThanOrEqual(1);
